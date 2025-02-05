@@ -1,0 +1,58 @@
+Quando falamos do estudo da computação, não podemos deixar de fora dois conceitos: Os Algoritmos e As Estruturas de Dados. O 
+motivo para isso é que esses dois conceitos forma a base essencial do mundo da computação e do desenvolvimento do software, de 
+forma eficaz e eficiente. Esses dois elementos não andam separados, muito pelo contrário, quando falamos de um estamos
+implicitamente falando de outro. A razão dessa sinergia é que em um programa de computador os algoritmos informam a ele quais
+instruções executar, e as estruturas de dados inforam como armazenar os dados que serão manipulados. E claro, um programa não é
+nada além de um conjunto de instruções e manipulações de dados. O estudo das estruturas de dados é um passo fundamental no estudo
+da computação, assim como os estudos dos algoritmos. Além disso, a melhor parte é que quando se aprende um, estamos por
+consequência aprendendo um pouco do outro ao mesmo tempo. 
+
+--
+
+Existem muitas estruturas de dados, assim como existem algoritmos. Também é similar o fato de que nem todas as estruturas são
+viáveis e eficientes para todos os cenários. Conforme as nossas anotações, ficará claro que a aplicação de uma estrutura é 
+muito dependendo do contexto, já que quando se trata de programas de computador, precisamos levar em conta a eficiência do tempo
+de execução e dos recursos computacionais, com vimos nas anotaçõe sobre algoritmos.
+
+Assim como temos muitas estruturas de dados diferentes, temos diversas categorias das estruturas. As principais são: 
+	- estruturas de dados concretas & abstratas;
+	- estruturas de dados lineares & não lineares;
+	- estruturas de dados dinâmicas & estáticas;
+
+Estruturas de dados concretas e abstratas:
+
+	Para iniciar nossa discussão sobre estruturas de dados, devemos primeiro conseguir identificar se estamos falando de 
+	estruturas concretas ou abstratas. 
+
+	Uma estrutura de dados abstrata é uma definição da estrutura no sentido de ideia, onde são definidas a sua lógica, suas
+	operações e funcionamento no geral. Em outras palavras: é a definição da estrutura de dados.
+
+	Já uma estrutura de dados concreta é a interpretação da estrutura abstrata em sua implementação no código. Por exemplo,
+	podemos ter a ideia de uma estrutura de dados que dispõe dos elementos em sequência, do mesmo tipo, e que pode
+	ter como suas operações fundamentais a adição e remoção de dados. Definimos então uma estrutura abstrata. Agora, ao
+	implementar essa estrutura no código, podemos codifica-la para representar suas funcionalidades e chama-la de Lista.
+	Definimos então uma estrutura de dados concreta, que é a implementação de uma estrutura abstrata.
+
+	
+Estruturas de dados lineares e não lineares:
+
+	Pelo nome fica clara a ideia dessas categorias, porém é sempre importante entender completamente.
+
+	Uma estrutura de dados linear é uma que dispõe dos seus elementos em sequência. Isso significa que cada elemento da 
+	estrutura terá um elemento após e um elemento antes a si mesmo(com exceção dos extremos). Uma lista é um exemplo de 
+	uma estrutura de dados linear. Por fim, uma estrutura linear é uma que não tem a característica linear. Um amontoado de 
+	pratos é uma estrutura que não é linear.
+
+Estruturas de dados dinâmicas e estáticas:
+
+	Uma estrutura de dados dinâmica é uma que, uma vez definida no código, pode ter seu tamanho alterado durante a execução
+	do programa e de acordo com a necessidade. De forma análoga, uma estrutura estática é uma que não tem essa capacidade,
+	ou seja, uma vez definido o seu tamanho, não poderá ser alterado de forma alguma e o programa deve ser executado em torno
+	desse fato.
+
+	Existem situações em que estruturas lineares são mais ou menos eficientes. O mesmo acontece com as estruturas dinâmicas.
+	Como foi dito no início, a eficiência de uma estrutura depende do contexto. Porém, é comum utilizar estruturas lineares
+	apenas se a eficiência do programa seja de muita importância. Estruturas dinâmicas são o suficiente nos outros casos.
+
+	É mais comum um programador se perguntar se deve utilizar estruturas lineares ou não lineares do que se deve utilizar 
+	estruturas estáticas ou não estáticas.
