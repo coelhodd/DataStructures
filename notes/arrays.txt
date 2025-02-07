@@ -1,0 +1,62 @@
+Começando por arrays, podemos afirmar sem dúvidas que essa é uma boa introdução ao conceito de estruturas de dados, por 
+normalmente ser de fácil implementação, servir de base para outras estruturas e a ideia que a define ser de fácil entendimento.
+
+Arrays:
+
+	A parte mais fundamental de se entender quando se trata de arrays é o seguinte: Esse tipo de estrutura armazena elementos
+	com índices, e os armazena em um bloco de memória contíguo. Em outras palavras, cada elemento carregará consigo um índice,
+	identificando sua posição no array, e cada elemento é armazenado na memória um ao lado do outro. 
+
+	Após essa definição mais importante, temos outras características de um array, como o fato de serem homogêneos(suportam
+	apenas um tipo de dados) e estáticos(não mudam de tamanho após sua definição).
+
+	Pode-se dizer que um array pode ser tanto uma estrutura de dados abstrata como concreta, já que ela pode representar a 
+	ideia de um estrutura(suas operações e comportamento), como também pode ser implementada no código. Isso é tão fato que 
+	uma lista em Python, por exemplo, utiliza o conceito abstrato de array, porém em sua implementação terão características
+	diferentes. Pode-se dizer que uma lista em Python é um array heterogêneo e dinâmico.
+
+	Os arrays apresentam 2 conceitos importantes: a indexação e a dimensionalidade. O primeiro diz respeito ao índice de 
+	cada elemento dentro do array. Esse índice é utilizado para localizar um elemento sempre que necessário dentro da
+	estrutura. Um índice, na maior parte dos casos, irá começar de zero. Isso significa que o primeiro elemento terá índice
+	zero, o segundo com índice um, o terceiro com índice dois, etc. O segundo conceito importante é a dimensionalidade do 
+	array. Essa estrutura pode ser unidimensional, contendo apenas o array em si, e multidimensional(arrays aninhados). Apesar
+	de arrays aninhados serem muito comuns, não é tão comum arrays que passem de 3 dimensões. Por fim, mesmo um array
+	multidimensional será contíguo na memória do computador.
+
+ 	-- 
+	
+	Quando falamos de estruturas de dados, assim como algoritmos, é inevitável a análise dos seus desempenhos. Existem 
+	estruturas com melhores desempenhos do que outras(sempre dependendo do contexto).Esse desempenho vem de operações que são
+	comuns à maioria das estruturas, como por exemplo a adição e remoção de elementos, como também a procura e busca de 
+	elementos específicos. Em outras palavras, essas quatro operações(adição, remoção, procura e busca) definem a eficiência
+	de uma estrutura. Falaremos agora da eficiência de um array.
+
+	Para começar a análise da eficiência de um array, como visto logo acima, devemos analisar a eficiência da complexidade
+	de tempo de cada uma das quatro operações:
+
+		Acesso -> O acesso a um elemento em um array será sempre constante, ou seja, O(1), pelo seguinte motivo:
+		independente de quantos elementos existem no array, podemos acessar qualquer elemento diretamente pelo seu
+		índice(eis a importância dos índices). Através dele podemos localizar diretamente o elemento na memória.
+
+		Busca -> A busca de um elemento em um array terá sua complexidade de tempo como O(n), na média,  principalmente 
+		quando a estrutura não está ordenada. Do contrário, podemos aplicar um algoritmo de busca que terá complexidade 
+		logarítmica(O(log n)). 	
+	
+		Inserção -> Quando inserimos um elemento em um array, devemos ajustar todos os índices após o elemento inserido,
+		ou seja, os elementos precisam "andar uma casa para o lado". Isso faz com que a inserção em um array tenha sua
+		complexidade linear(O(n)), na média. Essa complexidade pode variar de acordo com o local de um inserção do
+		elemento. Por exemplo, ao adicionar um elemento no final do array, não será necessário deslocar qualquer outro
+		elemento para compensar os índices, fazendo com que essa operação seja O(1).
+
+		Remoção -> A remoção de elementos em um array funciona da mesma forma que a inserção: Na média possui complexidade
+		O(n), já que existe a necessidade de compensar nos índices, porém, dependendo de onde o dado for removido, essa
+		complexidade pode ser alterada. Por exemplo, ao removermos o último dado de um array, não há a necessidade de 
+		alterar nenhum outro índice.
+
+	Percebemos que, não só um array tem sua eficiência média relativamente alta, como também que a complexidade de tempo das
+	próprias operações variam de acordo com o contexto. Por causa disso, na análise de operações de uma estrutura de dado,
+	leva-se em conta o caso médio sempre que possível. 
+
+	Para finalizar, vimos que arrays e as listas utilizadas em Python(chamados de arrays dinâmicos) são estruturas diferentes.
+	Mas não há a necessidade de analisar a eficiência de arrays dinâmicos, porque ambos possuem a mesma eficiência nas 
+	operações!
