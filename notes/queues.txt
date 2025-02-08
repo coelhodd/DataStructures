@@ -1,0 +1,33 @@
+Assim como as pilhas(stacks) são estruturas de dados abstratas que representam estruturas do mundo
+real, as filas(queues) também representam a mesma ideia, mas dessa vez lidaremos com filas e não
+pilhas. Uma estrutura de fila é uma que respeita o princípio First In First Out, ou FIFO. Em outras
+palavras, uma fila é uma estrutura de dados em que o primeiro elemento é o primeiro a sair, tal qual
+uma fila de banco. Ou seja: uma pilha invertida.
+
+Existe, porém, uma diferença fundamental entre stacks e queues que é importante notar. No caso das
+stacks, manipulamos apenas um local da estrutura: o final. Em uma pilha, tanto quando adicionamos
+um dado como quando removemos, estamos lidando com o último índice. Já em uma fila, lidamos tanto com
+o início quanto com o final, já que adicionamos elemento no início da estrutura e removemos do 
+final.
+
+Analisando as eficiências das operações em uma fila:
+
+	Em uma fila, a única operação que tem diferença com uma pilha é a de remoção de um dado.
+	Isso acontece porque quando removemos um dado de uma queueu, precisamos deslocar todos os
+	outros elementos um índice para a esquerda(menos no caso de a fila ser uma lista encadeada).
+	Por causa disso, a operação de remoção de um dado em uma queue tem sua complexidade como
+	linear O(n). Se a queue foi implementada através de uma lista encadeada, essa complexidade
+	muda para constante O(1).
+
+	O resto das operações seguem o mesmo padrão que as operações de uma pilha, ou seja, a
+	inserção de dados é constante O(1), e a busca e acesso aos dados são lineares O(n).
+
+
+Assim como as stacks, as queues também são muito utilizadas em várias áreas dentro da ciência da 
+computação. Porém, o contexto em que são utilizadas são os que seguem o padrão de fila(FIFO). Por 
+exemplo, imagine que queremos construir um software para atendimento de clientes. Esse software 
+deve seguir a ideia de "primeiro a chegar, último a sair", portanto, seguindo o princípio de fila.
+
+Mais uma vez escolho ressaltar que tanto as pilhas quanto as filas são conceitos abstratos. A 
+implementação de uma fila ou uma pilha pode ser feita de diversas formas: Com arrays tradicionais,
+arrays dinâmicos, listas encadeadas, etc.
