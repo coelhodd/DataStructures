@@ -1,0 +1,34 @@
+As stacks(pilhas) são tipos de dados abstratos que descrevem uma estrutura seguindo a filosofia
+"último a entrar primeiro a sair". Como o próprio nome sugere, ela é feita para simular uma pilha de
+objetos no mundo real, onde os últimos objetos colocados serão os primeiros a serem retirados(caso
+você não queira quebrar toda a estrutura). Esse princípio é também mais comumente chamado de LIFO(
+Last In First Out).
+
+Uma pilha possui duas operações principais: A de adição(no topo da pilha) e de remoção(também no 
+topo da pilha). A stack pode ser representada de diversas formas no código, ou seja, na sua forma 
+concreta, podemos aplica-la de muitos jeitos diferentes. O mais simples, em nome da didática, é 
+representar uma pilha como uma lista comum onde não se pode acessar ou remover outro elemento que
+não seja o último.
+
+Para ficar mais claro o exemplo, imaginemos que temos uma lista dos seguintes números: [5, 2, 9, 1].
+Como temos uma pilha, ou seja, só podemos lidar com o elemento do topo(último elemento), se quisermos
+realizar alguma operação no número 2, por exemplo, devemos remover primeiro os elementos 1 e 9. Só
+nessa situação o número 2 será o topo da pilha, então nos permitindo acessa-lo.
+
+Perceba que a pilha é uma estrutura de dados abstrata, ou seja, é uma ideia de uma representação de
+uma pilha da vida real em código.
+
+Analisando as operações em uma pilha:
+
+	Como já foi dito anteriormente, as pilhas possuem duas operações principais: a de inserção
+	e de remoção de dados. No caso, ambas as operações têm sua complexidade de tempo constante.
+	O motivo: Estamos lidando com apenas um índice de toda a estrutura: o último. Portanto, 
+	nesse caso, não haverá a necessidade de reajustar qualquer outro índice dos dados. Isso 
+	quer dizer que as stacks são ótimas em situações em que é necessário a adição ou remoção de
+	dados com frequência.
+
+	Para operações como busca e acesso temos que, na média, sua complexidade de tempo é linar.
+	O motivo é que para acessar ou buscar um elemento que estiver no meio da stack, será 
+	necessário a remoção de n elementos que estiverem acima.
+
+
