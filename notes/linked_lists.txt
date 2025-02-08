@@ -1,0 +1,58 @@
+Uma lista encadeada também usufrui dos conceitos de uma estrutura de dados abstrata chamada Lista.
+Com ela, temos as mesmas operações comuns: adição, remoção, busca e seleção de algum dado. A única
+diferença, porém, é que uma lista encadeada não armazena seus elementos de forma contígua na memória.
+Isso, na prática, significa que a estrutura não trabalhará com índices, e os dados estarão
+espalhados por toda a memória do computador.
+
+Mas como pode uma lista encadeada manter controle sobre os seus dados, se ela não utiliza índices e
+nem dispõe os elementos de forma contígua na memória? Simples: Ao invés de apenas dados, uma lista
+encadeada trabalha com nós(que são os dados em si) onde cada nó aponta para o endereço(!) do 
+próximo elemento na memória. Esses apontamentos são chamados de ponteiros. O primeiro nó é chamado
+de cabeça(head) e o último nó é chamado de cauda(tail). 
+
+Essencialmente, existem 3 tipos de listas encadeadas:
+
+	- Listas simples: São listas cujo os nós apenas apontam para o próximo elemento, ou seja,
+	só é possível iterar sobre a estrutura em apenas uma direção.
+
+	- Listas duplamente encadeadas: São listas cujo os nós apontam tanto para o próximo elemento
+	quanto para o elemento anterior. Na prática isso significa que é possível iterar sobre a 
+	estrutura indo para os dois lados.
+
+	- Listas circulares: Uma lista encadeada circular é uma lista que tem sua cauda apontando 
+	para a cabeça(os outros elemento se comportam de forma simples).
+
+--
+
+Desempenho de uma lista encadeada:
+
+	De acordo com as quatro operações mais importantes quando se trata de análise de eficiência
+	das estruturas de dados(adição, remoção, busca e acesso), podemos analisar o desempenho de
+	uma lista encadeada da seguinte forma:
+
+		Adição -> Para adicionar um elemento em uma lista encadeada, temos uma complexidade
+		de tempo constante O(1). O motivo para isso é que, diferente de um array que deve
+		reajustar seus índices com a adição de um elemento(na média), como uma lista
+		encadeada não trabalha com índices, não existe essa necessidade. Por isso,
+		independente do tamanho da lista, o tempo para execução dessa operação é sempre o 
+		mesmo.
+
+		Remoção -> Da mesma forma que a adição de elementos, a complexidade de tempo para 
+		essa ação é constante O(1). O motivo também é o mesmo: não existe a necessidade de 
+		reajuse de todos os outros índices da estrutura.
+
+		Busca -> A desvantagem com um array fica clara quando levamos em conta a operação de
+		busca. Como não temos índices, não é possível acessar um dado de forma direta. Isso
+		significa que será necessário iterar sobre toda a estrutura, até encontrar o item
+		desejado, fazendo com que a operação de busca seja linear(O(n)).
+
+		Acesso -> Como já vimos logo acima, o acesso a qualquer elemento é limitado à 
+		iteração da estrutura até que o dado seja encontrado, já que ela não trabalha com
+		índices. Mais uma vez, temos uma complexidade linear(O(n)).
+
+	Como podemos ver, a lista encadeada é mais eficiente que um array nas operações de acesso e
+	remoção de elementos. Portanto, é normal utilizar essa estrutura em situações em que será
+	necessário a adicionar ou remover elementos com frequência. Porém, se a busca ou apenas o 
+	acesso de elementos forem o suficiente, um array terá mais eficiência.
+
+
