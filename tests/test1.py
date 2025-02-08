@@ -1,2 +1,3 @@
-def hello_world():
-    print("hello world")
+class LinkedList:
+    def __init__(self):
+
