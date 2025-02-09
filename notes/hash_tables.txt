@@ -1,0 +1,49 @@
+Começando com as famosas tabelas hash, precisamos entender primeiro a sua ideia e em
+seguida sua implementação.
+
+Um array associativo é uma estrutura de dados abstrata linear, que utiliza o conceito de
+chaves e valores. A chave é utilizada para acessar o valor, e o valor em si só pode ser
+acessado através da chave. É importante saber que um array associativo é uma estrutura 
+de dados abstrata, enquanto uma hash table(table hash) é a implementação dessa estrutura.
+Um bom exemplo de uma hash table é um dicionário Python, que utiliza uma hash table em
+segundo plano.
+
+-> Importante: Uma hash table é uma estrutura de dados que armazena chaves de valores
+únicos! Na prática, então, não há possível definir uma estrutura em que há alguma
+repetição de chave.
+
+--
+
+Quando se trata de hash tables, existem algumas peculiaridades muito diferentes das outras
+estruturas, que vale a pena tomar toda uma seção para explicar.
+
+Para entender o funcionamento de uma hash table, devemos compreender que existem 2
+conceitos subjacentes: Um array, para funcionamento adequado, e uma função hash.
+
+Quando temos um par chave/valor para guardar em uma hash table, o processo funciona da 
+seguinte forma:
+
+	1- A chave é fornecida a uma função hash;
+	2- Essa função é responsável por retornar um valor inteiro;
+	3- Esse valor inteiro representará o índice no array, local onde o par chave/valor
+	será mantido.
+
+Então temos o processo de armazenamento em uma hash table que envolve alguns elementos,
+ao contrário de outras estruturas.
+
+-- 
+
+Analisando as operações de uma hash table:
+
+	As hash tables são as estruturas mais eficientes quando se trata de 3 operações:
+	Adição, remoção e procura de dados.
+
+	O motivo para isso é a função hash. Para cada uma das 3 operações, podemos obter
+	o índice do par chave/valor diretamente através da função hash, que nos
+	fornecerá o local exato do dado no array, ao invés de ser necessário iterar sobre
+	toda a estrutura ou algo do tipo.
+
+	O fator que pode modificar a complexidade de tempo de uma operação nessa estrutura
+	é se a função hash irá fornecer valores que colidem com outros. Se esse for o
+	caso, a complexidade pode ser linear. Mas mesmo assim, ainda é uma estrutura
+	extremamente eficiente.
