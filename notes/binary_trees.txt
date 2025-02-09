@@ -1,0 +1,91 @@
+Até o momento apenas as estruturas de dados lineares foram estudadas, ou seja, apenas as
+estruturas de dados cujo os elementos estão dispostos em sequência(cada elemento tem um
+à sua frente e outro à suas costas). A ávore binária, assim como as outras ávores e outras
+estruturas de dados, são estruturas não-lineares. Isso significa que não há uma sequência
+exata dos elementos. 
+
+Um exemplo visual de uma árvore:
+
+	c
+       / \
+      b   a
+     /   /
+    f   h
+   /
+  j
+
+Note que não há uma sequência clara dos elementos em uma estrutura como essa. Mas não
+deixa de ser uma estrutura de dados!
+
+Quando falamos de estruturas em ávores, existem alguns conceitos que devem ser conhecidos:
+
+	- O nó no topo da estrutura, que no nosso exemplo foi o nó 'c', é conhecido como
+	nó raíz.
+
+	- Cada nó conectado abaixo de um outro nó, é conhecido como nó filho, e o nó 
+	acima é conhecido como nó pai.
+
+	- Nós irmãos compartilham o mesmo pai.
+
+	- A conexão entre dois nós de uma árvore chama-se aresta(edge).
+
+	- É possível se mover de nó para nó, contanto que os nós estejam conectados entre
+	si por uma aresta.
+
+	- Um nó sem filhos se chama um nó-folha, e um nó com nós-filhos chama-se nó-ramo(
+	branch).
+
+--
+
+Uma árvore binária é caracterizada por cada nó em sua estrutura ter no máximo dois filhos.
+Isso significa que um nó pode ter 0(nó-folha), 1 ou 2 nós filhos, mas nunca mais do que
+isso.
+
+Exemplo visual de uma árvore binária:
+
+	a
+       / \
+      b   c
+     / \   \
+    d   e   f
+
+Essa árvore é binária porque o nó raíz tem 2 nós filhos(b, c), e tanto b quanto c têm no
+mínimo dois filhos(b tem os nós d, e)(c tem o nó f, sendo f um nó folha).
+
+--
+
+Árvore de busca binária:
+
+	Uma árvore de busca binária é uma estrutura de dados que dispõe dos seus nós da
+	seguinte forma: Para cada nó, os subnós à esquerda serão de valores menores que o
+	nó pai, e os subnós à direita serão de valores maiores que o nó pai.
+
+	Exemplo:
+
+		9
+	       / \
+	      5   12
+             / \   \
+            3   8   16
+               / \   /
+              6   9 15
+
+	Perceba que para cada nó pai, os nós filhos à esquerda são menores, da mesma forma
+	que os nós à direita são maiores.
+
+Ao contrário do que ocorre com estruturas lineares, em uma estrutura de árvore não é 
+possível iterar sobre todos os elementos sem o backtracking. Por exemplo, imagine que 
+você monte um algoritmo para iterar apenas os elementos da direita, começando do nó raíz
+da árvore de busca binária acima. Apenas os elementos 9, 12 e 16 serão considerados. Então
+fica claro que deve haver algum tipo de backtracking para que todos os elementos sejam
+iterados.
+
+--
+
+Analisando as eficiências das operações em uma estrutura de árvore binária:
+
+	A complexidade das operações de inserção, remoção e busca em árvores gerais ou 
+	binárias são lineares. Porém, em uma árvore de busca binária, a complexidade de 
+	tempo dessas operações passam a ser logarítmicas.
+
+
