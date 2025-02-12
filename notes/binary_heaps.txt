@@ -1,0 +1,24 @@
+Antes de começarmos a entender sobre o heap, precisamos entender uma primeira estrutura abstrata. A fila de prioridade é uma
+estrutura que lida com os seus elementos não por lógicas FIFO ou LIFO, tal qual filas ou pilhas, mas sim com a definição de
+prioridades carregadas pelos seus dados. No caso de uma fila de prioridade, os elementos que sairão primeiro serão os de maior
+prioridade, seguido pelos elementos de menores prioridadades, etc. Entendido uma fila de prioridade, é possível entender que um
+heap é uma estrutura que utiliza uma base de estrutura de árvore, onde seus elementos carregam seus respectivos valores e suas 
+prioridades.
+
+--
+
+Um heap é uma estrutura de dados baseada em árvore na qual cada nó registra duas informações: um valor e sua prioridade. O valor
+do nó de um heap chama-se chave. Apesar de a chave e a prioridade de um nó não estarem necessariamente relacionadas, existem 
+situações em que esse é o caso.
+
+Um heap binário é uma estrutura criada utilizando uma árvore binária(como visto no arquivo binary_trees.txt). Apesar disso,
+existem dois tipos de heaps binários: heaps máximos(max heaps) e heaps mínimos(min heaps).
+
+-> Em um max heap, a prioridade de um nó pai é sempre maior ou igual a prioridade que os seus nós filhos, tendo como a prioridade
+máxima o nó raíz da árvore. De forma análoga, um heap minímo é uma estrutura cujo a prioridade do nó pai é sempre menor que as
+prioridades dos nós filhos, tendo o nó raíz como a menor prioridade.
+
+O processo de "heapificar" é o processo de transformar uma estrutura de dados, como uma lista qualquer, em um heap. 
+
+[Pessoalmente, não darei muita atenção à essa estrutura de dados no momento, a não ser que eu veja necessidade. Se for o caso,
+voltarei para estudar a estrutura mais afundo e fornecer anotações mais claras e explicativas]
